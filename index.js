@@ -20,6 +20,19 @@ app.get("/add_student", (req, res) => {
     res.render("add_student");
 });
 
+
+app.post("/add_student", (req, res) => {
+    console.log('post');
+    console.log(req.body.name);
+    console.log(req.body.faculty);
+    console.log(req.body.course);
+    console.log(req.body.group);
+        // name = req.body.name,
+        // faculty = req.body.faculty,
+        // course = req.body.course,
+        // group = req.body.group,    
+});
+
 app.listen(3000, function() {
     console.log("App listening on port 3000!");
 });
