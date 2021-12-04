@@ -11,18 +11,14 @@
   </tr>
 </thead>
 <tbody>
+  <%  students.forEach(function(student){ %>
   <tr>        
-    <td>Name</td>
-    <td>Faculty</td>
-    <td>Course</td>
-    <td>Group</td>
+    <td><%= student.name %></td>
+    <td><%= student.faculty %></td>
+    <td><%= student.course %></td>
+    <td><%= student.group %></td>
   </tr>
-  <tr>
-    <td>Jay Bhakhar</td>  
-    <td>ФМиИТ</td>
-    <td>4</td>
-    <td>АР41</td>
-  </tr>
+  <% }) %>
 </tbody>
 </table>
 

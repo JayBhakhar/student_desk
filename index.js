@@ -26,10 +26,11 @@ const studentSchema = {
 const Student = mongoose.model("Student", studentSchema);
 
 app.get("/", (req, res) => {
-    Student.find({}, function(err, student){
-        console.log(student);
+    Student.find({}, function(err, students){    
+    res.render("dashboard", {
+        students: students
     });
-    res.render("dashboard");
+    });
 });
 
 app.get("/add_student", (req, res) => {
