@@ -11,8 +11,7 @@ app.use(express.static("public")); // folder name :- public
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", (req, res) => {
-    console.log("working")
-    res.send('hello');
+    res.sendFile(__dirname + '/dashboard.html');
 });
 
 app.listen(3000, function() {
