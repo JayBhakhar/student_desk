@@ -1,0 +1,24 @@
+{
+  "name": "student_desk",
+  "version": "1.0.0",
+  "description": "list of students",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayBhakhar/student_desk.git"
+  },
+  "author": "Jay Bhakhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JayBhakhar/student_desk/issues"
+  },
+  "homepage": "https://github.com/JayBhakhar/student_desk#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15",
+    "request": "^2.88.2"
+  }
+}
