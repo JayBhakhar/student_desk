@@ -1,8 +1,46 @@
 <%- include("partials/header"); -%>
 
-<h1>
-    add student
-</h1>
+<div class="" action="/compose" method="post">
+    <div class="form-group mb-3">    
+    <label>Name</label>
+    <input class="form-control" type="text" name="name">  
+
+    <div class="row">
+        <div class="dropdown col">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Faculty</option>       
+                <option value="1" >Филологический факультет</option>
+                <option value="2" >Факультет башкирской и тюркской филологии</option>
+                <option value="3" >Исторический факультет</option>
+                <option value="4" >Факультет математики и информационных технологий</option>
+                <option value="5" >Естественнонаучный факультет</option>
+                <option value="6" >Факультет педагогики и психологии</option>
+                <option value="7" >Экономический факультет</option>
+                <option value="8" >Юридический факультет</option>
+                <option value="9" >Колледж</option>
+                <option value="10" >Физическая культура и адаптивная физическая культура</option>
+                <option value="11" >Аспирантура</option>
+            </select>    
+        </div>
+
+        <div class="dropdown col">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Курс</option>       
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> 
+        </div>
+    </div>
+      
+    <label>Group</label>
+    <input class="form-control" type="text" name="group">
+ 
+    </div>      
+    <button type="submit"  class="btn btn-primary">Add New Student</button>
+</form>
 
 
 <%- include("partials/footer"); -%>
