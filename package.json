@@ -12,6 +12,9 @@
   },
   "author": "Jay Bhakhar",
   "license": "ISC",
+  "engines": {
+    "node": "8.1.0"
+  },
   "bugs": {
     "url": "https://github.com/JayBhakhar/student_desk/issues"
   },
