@@ -8,6 +8,7 @@
     <th scope="col">Faculty</th>
     <th scope="col">Course</th>
     <th scope="col">Group</th>
+    <th></th>
   </tr>
 </thead>
 <tbody>
@@ -17,6 +18,9 @@
     <td><%= student.faculty %></td>
     <td><%= student.course %></td>
     <td><%= student.group %></td>
+    <td>
+      <a class="btn btn-danger" href="add_student/delete/<%= student._id %>">Delete</a>   
+    </td>
   </tr>
   <% }) %>
 </tbody>
