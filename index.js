@@ -17,7 +17,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 mongoose.connect("mongodb+srv://JayBhakhar:jay456789@student-desk.ff0hu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useNewUrlParser: true});
 
 const studentSchema = {
-    _id: String,
     name: String,
     faculty: String,
     course: String,
