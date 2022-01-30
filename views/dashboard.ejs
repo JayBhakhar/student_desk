@@ -23,29 +23,28 @@
     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
       Delete
     </button>
-    </td>
-  </tr>
-  
-  <!-- The Modal -->
-  <div class="modal" id="deleteModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
+  </td>
+</tr>
+    <!-- The Modal -->
+    <div class="modal" id="deleteModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
 
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title"> Are you sure ?</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>     
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title"> Are you sure ?</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>   
 
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <a class="btn btn-danger" href="add_student/delete/<%= student._id %>" data-bs-dismiss="modal">Delete</a>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cancel </button>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <a class="btn btn-danger" href="add_student/delete/<%= student._id %>"> Delete </a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cancel </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
+  
 <%- include("partials/footer"); -%>
   <% }) %>
 </tbody>

@@ -56,7 +56,6 @@ app.post("/add_student", (req, res) => {
 app.get("/add_student/delete/:id", function(req, res){
   Student.findByIdAndRemove(req.params.id, function(err){
       if (!err) {
-        console.log("Successfully deleted checked item.");
         res.redirect("/");
       }
     })    
