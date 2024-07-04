@@ -14,7 +14,7 @@ app.use(express.static("public")); // folder name :- public
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-mongoose.connect("mongodb+srv://JayBhakhar:jay456789@student-desk.ff0hu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect(DATABASE_LINK, {useNewUrlParser: true});
 
 const studentSchema = {
     name: String,
